@@ -3,6 +3,11 @@ p {
   font-family: Lato;
 }
 
+body {
+  width: 50%;
+  margin: auto;
+}
+
 .task2 label {
   font-size: 14px;
 }
@@ -12,7 +17,10 @@ p {
 }
 
 .task2 input {
-  margin-left: 10px;
+  height: 32px;
+  display: block;
+  border: 1px solid #ccc;
+  width: 100%;
 }
 
 .addlist {
