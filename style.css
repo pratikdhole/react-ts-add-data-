@@ -1,0 +1,23 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.task2 label {
+  font-size: 14px;
+}
+
+.task2 div {
+  margin: 10px 0;
+}
+
+.task2 input {
+  margin-left: 10px;
+}
+
+.addlist {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
