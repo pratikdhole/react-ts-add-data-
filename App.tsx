@@ -22,7 +22,7 @@ export default function App() {
     console.log(inputdata);
   }
 
-  function changehandle2(){
+  function changehandle2() {
     console.log();
   }
   return (
@@ -52,7 +52,7 @@ export default function App() {
           Add list
         </button>
       </form>
-      <table >
+      <table>
         <thead>
           <tr>
             <th>Task Name</th>
@@ -60,22 +60,16 @@ export default function App() {
           </tr>
         </thead>
         <tbody>
-                {                 
-                 inputarr.map{
-                  (info,ind)=> {
-                    return (
-                      <tr key={ind}>
-                      <td>{info.taskname}</td>
-                      <td>{info.duration}</td>
-                    </tr>
-                    )
-                  }
-                
-               }
-
-          </tbody>
+          {inputarr.map((info, ind) => {
+            return (
+              <tr key={ind}>
+                <td>{info.taskname}</td>
+                <td>{info.duration}</td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );
 }
-
