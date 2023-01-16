@@ -15,8 +15,8 @@ export default function App() {
   }
   let { taskname, duration } = inputdata;
 
-  function changhandle() {
-    e.
+  function changhandle(e) {
+    e.preventDefault();
     setinputarr([...inputarr, { taskname, duration }]);
     setInputdata({ taskname: '', duration: '' });
     console.log(inputarr);
