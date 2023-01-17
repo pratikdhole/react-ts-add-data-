@@ -13,14 +13,12 @@ export default function App() {
   function changehandle(e) {
     setInputdata({ ...inputdata, [e.target.name]: e.target.value });
   }
-  let { taskname, duration } = inputdata;
 
+  let { taskname, duration } = inputdata;
   function changhandle(e) {
     e.preventDefault();
     setinputarr([...inputarr, { taskname, duration }]);
     setInputdata({ taskname: '', duration: '' });
-    console.log(inputarr);
-    console.log(inputdata);
   }
 
   function changehandle2() {
@@ -37,16 +35,18 @@ export default function App() {
             className="text1"
             onChange={changehandle}
             name="taskname"
+            required
           />
         </div>
         <div>
           <label>Duration</label>
           <input
-            type="text"
+            type="number"
             value={inputdata.duration}
             className="text1"
             onChange={changehandle}
             name="duration"
+            required
           />
         </div>
         <button className="addlist" onClick={changhandle}>
